@@ -1,0 +1,22 @@
+.card-wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+.cardStyle {
+  border: 0;
+  text-align: center;
+  margin: 10px;
+}
+
+.product-image {
+  object-fit: contain;
+  width: 100%;
+  height: 250px;
+}
+
+.align-center {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+}

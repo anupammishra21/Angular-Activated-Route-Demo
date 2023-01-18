@@ -1,0 +1,94 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="container contact-form">
+  <div class="contact-image">
+    <img src="https://image.ibb.co/kUagtU/rocket_contact.png" alt="rocket_contact" />
+  </div>
+  <form method="post" (submit)="Submit(myForm)" #myForm="ngForm">
+    <h3>Drop Us a Message</h3>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-group">
+          <input type="text" name="txtName" class="form-control" placeholder="Your Name *" value="" ngModel
+            #txtName="ngModel" required pattern="" />
+          <div *ngIf="txtName.touched">
+            <div *ngIf="txtName.hasError('required')">
+              <span style="color: rgb(222, 29, 29);">* Fill this Required field</span>
+            </div>
+            <div *ngIf="txtName.hasError('pattern')">
+              <span style="color: rgb(222, 29, 29);">*Invalid Input</span>
+            </div>
+          </div>
+        </div>
+
+
+
+
+        <div class="form-group">
+          <input type="text" name="txtEmail" class="form-control" placeholder="Your Email *" value="" ngModel
+            #txtEmail="ngModel" required email pattern="" />
+
+          <div *ngIf="txtEmail.touched">
+            <div *ngIf="txtEmail.hasError('required')">
+              <span style="color: rgb(222, 29, 29);">* Fill this Required field</span>
+            </div>
+            <div *ngIf="txtEmail.hasError('pattern')">
+              <span style="color: rgb(222, 29, 29);">*Invalid Input</span>
+            </div>
+          </div>
+
+
+        </div>
+
+
+
+
+        <div class="form-group">
+          <input type="text" name="txtPhone" class="form-control" placeholder="Your Phone Number *" value="" ngModel
+            #txtPhone="ngModel" required phone pattern="" />
+          <div *ngIf="txtPhone.touched">
+            <div *ngIf="txtPhone.hasError('required')">
+              <span style="color: rgb(222, 29, 29);">* Fill this Required field</span>
+            </div>
+            <div *ngIf="txtPhone.hasError('pattern')">
+              <span style="color: rgb(222, 29, 29);">*Invalid Input</span>
+            </div>
+          </div>
+
+
+
+        </div>
+
+
+
+
+        <div class="form-group">
+          <button type="submit" name="btnSubmit" class="btnContact" value="Send Message"> submit</button>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group">
+          <textarea name="txtMsg" class="form-control" placeholder="Your Message *" style="width: 100%; height: 150px;"
+            ngModel txtMsg="ngModel"></textarea>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+
+<!-- <ul>
+    <li>{{userData.txtName}}</li>
+    <li>{{userData.txtEmail}}</li>
+    <li>{{userData.txtPhone}}</li>
+    <li>{{userData.txtMsg}}</li>
+</ul> -->
+
+<h3>{{userData.txtName}}</h3>
+<h3>{{userData.txtEmail}}</h3>
+<h3>{{userData.txtPhone}}</h3>
+<h3>{{userData.txtMsg}}</h3>
+
+

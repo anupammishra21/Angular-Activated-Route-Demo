@@ -1,0 +1,15 @@
+
+
+
+<div class="row" >
+    <div class="col-sm-4" *ngFor="let item of user">
+        <div class="card cardStyle" routerLink="/products/products_details/{{item.prod_id}}">
+            <img src={{item.prod_img}} class="card-img-top" alt="logo">
+            <div class="card-body">
+              <h5 class="card-title">{{item.prod_name}}</h5>
+             
+            </div>
+          </div>
+    </div>
+  </div>
+  <router-outlet></router-outlet>

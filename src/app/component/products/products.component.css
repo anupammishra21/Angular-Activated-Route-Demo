@@ -1,0 +1,15 @@
+.row {
+    margin-top: 50px;
+    margin-left: 15px;
+  }
+  .card-img-top {
+    height: 250px;
+    width: auto;
+  }
+  
+  .cardStyle {
+    width: 25rem;
+    border: 0;
+    text-align: center;
+    cursor: pointer;
+  }

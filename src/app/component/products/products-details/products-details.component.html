@@ -1,0 +1,20 @@
+<!-- <p>products-details works!</p> -->
+<app-searchbar (searchTextChanged)="onSearchTextEntered($event)"></app-searchbar>
+<div class="row">
+  <div *ngIf="!productList.length" class="align-center" > <h2 style="color: red;">No Data Found</h2>  </div>
+  <div class="col-sm-4" *ngFor="let m of productList">
+    <div class="card-wrapper">
+      <div class="card cardStyle">
+        <img class="product-image" src={{m.comp_img}} alt="...">
+        <div class="card-body">
+          <h5 class="card-title"><b>{{m.comp_model}}</b></h5>
+          <h5 class="card-title" style="color: red;"><b>₹{{m.comp_price}}</b></h5>
+          <button type="button" class="btn btn-outline-success"
+            routerLink="/products/products_details/products_moredetails/{{productID}}/{{m.comp_id}}">products
+            details</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<router-outlet></router-outlet>

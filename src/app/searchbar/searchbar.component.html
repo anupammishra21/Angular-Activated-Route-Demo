@@ -1,0 +1,28 @@
+
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      
+    </div>
+    <div class="col-12">
+      <div id="custom-search-input">
+        <div class="input-group">
+          <input type="text" class="search-query form-control" placeholder="Search"
+          [(ngModel)]="enterSearchValue" (input)="onSearchTextChanged()"
+           />
+          <span class="input-group-btn">
+            <button type="button" disabled>
+              <span class="fa fa-search"></span>
+            </button>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

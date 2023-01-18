@@ -1,0 +1,15 @@
+.navbar-brand{
+    color: rgb(36, 192, 192);
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    /* font-family: 'Courier New', Courier, monospace; */
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+    font-family: cursive;
+    font-size: x-large;
+    
+}
+.navbar{
+    background-color: rgb(61, 174, 176);
+    /* text-shadow: 1 0 .25 .75 black; */
+}
+

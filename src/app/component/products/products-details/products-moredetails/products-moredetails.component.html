@@ -1,0 +1,81 @@
+<div class="container">
+
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="{{ singel_product.comp_imgdetails1 }}" class="d-block w-100" alt="..." height="300px">
+      </div>
+      <div class="carousel-item">
+        <img src="{{ singel_product.comp_imgdetails2 }}" class="d-block w-100" alt="..." height="300px">
+      </div>
+      <div class="carousel-item">
+        <img src="{{ singel_product.comp_imgdetails3 }}" class="d-block w-100" alt="..." height="300px">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+  <div class="b">
+    <div>
+      <!-- <h1 class="c"><b>Product Details</b></h1> -->
+    </div>
+    <div>
+      <h3>
+        <pre>{{ singel_product.comp_prodDetails1 }}</pre>
+      </h3>
+      <h3>
+        <pre>{{ singel_product.comp_prodDetails2 }}</pre>
+      </h3>
+      <h3>
+        <pre>{{ singel_product.comp_prodDetails3 }}</pre>
+      </h3>
+      <h3>
+        <pre>{{ singel_product.comp_prodDetails4 }}</pre>
+      </h3>
+      <h3>
+        <pre>{{ singel_product.comp_prodDetails5 }}</pre>
+      </h3>
+      <h3>
+        <pre>{{ singel_product.comp_prodDetails6 }}</pre>
+      </h3>
+      <h3>
+        <pre>{{ singel_product.comp_prodDetails7 }}</pre>
+      </h3>
+      <h3>
+        <pre>{{ singel_product.comp_prodDetails8 }}</pre>
+      </h3>
+      <h3>
+        <pre>{{ singel_product.comp_prodDetails9 }}</pre>
+      </h3>
+      <h3>
+        <pre>{{ singel_product.comp_prodDetails10 }}</pre>
+      </h3>
+
+
+    </div>
+
+  </div>
+  <div class="d">
+    <a routerLink="/contact" class="btn btn-outline-success" aria-disabled="true">CONTACT US </a>
+
+  </div>
+  <router-outlet></router-outlet>
+</div>
